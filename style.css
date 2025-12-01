@@ -1,48 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="beat.css" />
-   
-  </head>
-  <body>
-    <div class="box">
-        <form>
-        <h2>Login</h2>
-        <div class="ut">
-            <input type="email" placeholder="nom d'utilisateur" required>
-            
-        </div>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(83, 142, 150);
+  background: url("Momooo.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.box {
+  width: 420px;
+  background: transparent;
+  border-radius: 10px;
+  padding: 30px 40px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border: 2px solid rgba(225, 225, 225, 0.2);
+}
+.box h2 {
+  font-size: 31px;
+  text-align: center;
+}
+.box .ut {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.ut input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  padding: 20px 45px 20px 20px;
+}
+.ut input::placeholder {
+  color: rgb(253, 255, 255);
+}
 
-        <div class="ut">
-            <input type="password" name="" id="" placeholder="mot de passe">
-        </div>
-        <div class="oublie">
-            <label>
-                <input type="checkbox" name="" id=""> remember me
-            </label>
-            <a href="#">forgot password?</a>
+.box .oublie {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+.box .boutton {
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
 
+.box .creer {
+  font-size: 14.5px;
+  text-align: center;
+  margin-top: 20px 0 15px;
+}
+.creer p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.creer p a:hover {
+  text-decoration: underline;
+}
 
-        </div>
-
-        <div class="autre">
-            <button type="submit" class="boutton">Login</button>
-        </div>
-
-        <div class="creer">
-            <p>tu n'as pas de compte ?
-                <a href="#">register</a>
-            </p>
-        </div>
-
-
-        </form>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
